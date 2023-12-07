@@ -30,16 +30,16 @@ class Solution:
         while root:
             
             # If the root value is equal to the input, return the root value
-            if root.data == x:
-                return root.data
+            if root.val == x:
+                return root.val
             
             # If the root value is greater than the input, traverse the left subtree 
-            elif root.data > x:
+            elif root.val > x:
                 root = root.left
                 
             # If the root value is less than the input, traverse the right subtree
             else:
-                floor = root.data
+                floor = root.val
                 root = root.right
 
         # Return the floor  
