@@ -29,11 +29,11 @@ class Solution:
             return -1
         
         # If the root value is equal to the input, return the root value
-        elif root.key == inp:
-            return root.key
+        elif root.val == inp:
+            return root.val
 
         # If the root value is less than the input, traverse the right subtree 
-        elif root.key < inp:
+        elif root.val < inp:
             return(self.findCeil(root.right, inp))
 
         # If the root value is greater than the input, traverse the left subtree  
@@ -46,6 +46,6 @@ class Solution:
 
             # If the value returned by the left subtree is less than the input, return the root value  
             else:
-                return(root.key)
+                return(root.val)
 
 ```
