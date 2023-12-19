@@ -1,15 +1,17 @@
 # Intuition
+
 <!-- Describe your first thoughts on how to solve this problem. -->
 
 # Approach
+
 <!-- Describe your approach to solving the problem. -->
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(N)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(N)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
@@ -27,7 +29,7 @@ class Solution:
         # If root is None then return
         if root is None:
             return
-        
+
         # If root is the only node then return the root value
         if not root.left and not root.right:
             return [[root.val]]
@@ -38,7 +40,7 @@ class Solution:
 
         # Traverse the tree level by level
         while queue:
-            
+
             # Initialising the level array and the length of the queue
             level, l= [], len(queue)
 
@@ -58,6 +60,6 @@ class Solution:
             # Append the level array to the res array
             res.append(level)
 
-        return res     
+        return res
 
 ```
