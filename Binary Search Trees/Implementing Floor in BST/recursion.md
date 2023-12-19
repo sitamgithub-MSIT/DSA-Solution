@@ -1,7 +1,9 @@
 # Intuition
+
 <!-- Describe your first thoughts on how to solve this problem. -->
 
 # Approach
+
 <!-- Describe your approach to solving the problem. -->
 
 # Complexity
@@ -23,19 +25,19 @@
 #         self.right = right
 class Solution:
     def floor(self, root, x):
-        
+
         # Base case
         if root is None:
             return -1
-        
+
         # If the root value is equal to the input, return the root value
         elif root.data == x:
             return(root.data)
-        
+
         # If the root value is greater than the input, traverse the left subtree
         elif root.data > x:
             return(self.floor(root.left, x))
-        
+
         # If the root value is less than the input, traverse the right subtree
         else:
             val = self.floor(root.right, x)

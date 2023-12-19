@@ -1,7 +1,9 @@
 # Intuition
+
 <!-- Describe your first thoughts on how to solve this problem. -->
 
 # Approach
+
 <!-- Describe your approach to solving the problem. -->
 
 # Complexity
@@ -23,20 +25,20 @@
 #         self.right = right
 class Solution:
     def findCeil(self,root, inp):
-        
+
         # Base case
         if root is None:
             return -1
-        
+
         # If the root value is equal to the input, return the root value
         elif root.val == inp:
             return root.val
 
-        # If the root value is less than the input, traverse the right subtree 
+        # If the root value is less than the input, traverse the right subtree
         elif root.val < inp:
             return(self.findCeil(root.right, inp))
 
-        # If the root value is greater than the input, traverse the left subtree  
+        # If the root value is greater than the input, traverse the left subtree
         else:
             val = self.findCeil(root.left, inp)
 
@@ -44,7 +46,7 @@ class Solution:
             if(val >= inp and val != -1):
                 return(val)
 
-            # If the value returned by the left subtree is less than the input, return the root value  
+            # If the value returned by the left subtree is less than the input, return the root value
             else:
                 return(root.val)
 
