@@ -19,6 +19,16 @@
 ```
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        """
+        Calculates the length of the longest common subsequence between two strings.
+
+        Args:
+            text1 (str): The first input string.
+            text2 (str): The second input string.
+
+        Returns:
+            int: The length of the longest common subsequence.
+        """
 
         # length of text1 and text2
         n, m = len(text1), len(text2)
