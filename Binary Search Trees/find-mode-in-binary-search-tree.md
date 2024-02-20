@@ -1,7 +1,9 @@
 # Intuition
+
 <!-- Describe your first thoughts on how to solve this problem. -->
 
 # Approach
+
 <!-- Describe your approach to solving the problem. -->
 
 # Complexity
@@ -23,6 +25,15 @@
 #         self.right = right
 class Solution:
     def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        """
+        Finds the mode(s) in a binary search tree.
+
+        Args:
+            root (Optional[TreeNode]): The root node of the binary search tree.
+
+        Returns:
+            List[int]: A list containing the mode(s) in the binary search tree.
+        """
 
         # Define a dictionary to store the count of each node
         dic = {}
@@ -57,5 +68,4 @@ class Solution:
 
         # Return the answer
         return ans
-
 ```
