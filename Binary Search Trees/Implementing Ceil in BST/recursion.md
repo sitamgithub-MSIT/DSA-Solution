@@ -49,5 +49,4 @@ class Solution:
             # If the value returned by the left subtree is less than the input, return the root value
             else:
                 return(root.val)
-
 ```

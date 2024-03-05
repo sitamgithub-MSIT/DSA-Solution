@@ -25,7 +25,26 @@
 #         self.right = right
 class Solution:
     def floor(self, root, x):
+        """
+        Finds the floor value of a given input 'x' in a binary search tree.
 
+        Parameters:
+        - root: The root node of the binary search tree.
+        - x: The input value for which the floor value needs to be found.
+
+        Returns:
+        - The floor value of 'x' in the binary search tree.
+
+        Algorithm:
+        1. If the root is None, return -1 (indicating that there is no floor value).
+        2. If the root value is equal to 'x', return the root value.
+        3. If the root value is greater than 'x', traverse the left subtree and recursively call the 'floor' function on the left child.
+        4. If the root value is less than 'x', traverse the right subtree and recursively call the 'floor' function on the right child.
+        5. If the value returned by the right subtree is less than or equal to 'x' and not equal to -1, return that value.
+        6. If the value returned by the right subtree is greater than 'x', return the root value.
+
+        Note: The floor value of 'x' in a binary search tree is the largest value in the tree that is less than or equal to 'x'.
+        """
         # Base case
         if root is None:
             return -1
@@ -49,5 +68,4 @@ class Solution:
             # If the value returned by the right subtree is greater than the input, return the root value
             else:
                 return(root.data)
-
 ```
