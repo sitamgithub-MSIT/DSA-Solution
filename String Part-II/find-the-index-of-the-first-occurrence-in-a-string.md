@@ -8,29 +8,27 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(N * M)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(1)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
 
 ```
-
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         """
         Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
         Args:
-            haystack (str): A string.
-            needle (str): A string.
+            - haystack (str): A string.
+            - needle (str): A string.
 
         Returns:
             int: The index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
         """
-
         # Iterating through the haystack string
         for i in range(len(haystack)-len(needle)+1):
 
