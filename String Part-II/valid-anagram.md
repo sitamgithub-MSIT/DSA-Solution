@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         """
