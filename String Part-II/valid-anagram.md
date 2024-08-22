@@ -8,10 +8,10 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(N)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(N)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
@@ -23,13 +23,12 @@ class Solution:
         Determines if two strings are anagrams of each other.
 
         Args:
-            s (str): A string.
-            t (str): A string.
+            - s (str): A string.
+            - t (str): A string.
 
         Returns:
             bool: True if the strings are anagrams of each other, False otherwise.
         """
-
         # Count the frequency of each character in both strings
         count1 = Counter(s)
         count2 = Counter(t)
