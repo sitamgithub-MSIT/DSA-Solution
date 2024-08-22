@@ -16,23 +16,22 @@
 
 # Code
 
-```
+```python
 class Solution:
     def reverseWords(self, s: str) -> str:
-            """
-            Reverses the order of words in a given string.
+        """
+        Reverses the order of words in a given string.
 
-            Args:
-                s (str): The input string.
+        Args:
+            s (str): The input string.
 
-            Returns:
-                str: The input string with the order of words reversed.
-            """
+        Returns:
+            str: The input string with the order of words reversed.
+        """
+        # Split the string into words and reverse the list
+        s = s.split()
+        s.reverse()
 
-            # Split the string into words and reverse the list
-            s = s.split()
-            s.reverse()
-
-            # Return the reversed string
-            return(" ".join(s))
+        # Return the reversed string
+        return(" ".join(s))
 ```
