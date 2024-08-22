@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python
 class Solution:
     def singleNonDuplicate(self, nums: List[int]) -> int:
         """
@@ -28,7 +28,6 @@ class Solution:
         Returns:
             int: The single non-duplicate element in the array.
         """
-
         # Initialize res variable as 0
         res = 0
 
