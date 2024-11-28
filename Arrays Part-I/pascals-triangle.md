@@ -27,7 +27,6 @@ class Solution:
 
         Returns:
             List[List[int]]: A 2-D list representing Pascal's triangle.
-
         """
         # Initializing the 2-D array ans with value 1
         ans = [[1]]

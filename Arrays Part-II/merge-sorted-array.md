@@ -8,10 +8,10 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(m + n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(1)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
@@ -23,15 +23,14 @@ class Solution:
         Merges two sorted arrays, nums1 and nums2, into nums1 in sorted order.
 
         Args:
-            nums1 (List[int]): The first sorted array.
-            m (int): The number of elements in nums1.
-            nums2 (List[int]): The second sorted array.
-            n (int): The number of elements in nums2.
+            - nums1 (List[int]): The first sorted array.
+            - m (int): The number of elements in nums1.
+            - nums2 (List[int]): The second sorted array.
+            - n (int): The number of elements in nums2.
 
         Returns:
             None: The function modifies nums1 in-place.
         """
-
         k = m + n -1
 
         # Iterate through the arrays
