@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         """
