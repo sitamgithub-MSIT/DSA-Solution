@@ -1,23 +1,33 @@
 # Intuition
+
 <!-- Describe your first thoughts on how to solve this problem. -->
 
 # Approach
+
 <!-- Describe your approach to solving the problem. -->
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(n)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
 
-```
+```python3 []
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        """
+        This function calculates the length of the longest substring without repeating characters in a given string.
 
+        Args:
+            s (str): The input string.
+
+        Returns:
+            int: The length of the longest substring without repeating characters.
+        """
         # Initialize the left pointer, the set and the result
         string_set = set()
         l = 0
@@ -39,5 +49,4 @@ class Solution:
 
         # Return the result
         return res
-        
 ```

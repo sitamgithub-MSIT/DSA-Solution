@@ -8,28 +8,27 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(n)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
 
-```
+```python3 []
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         """
         Finds two numbers in the given list that add up to the target value.
 
         Args:
-            nums (List[int]): The list of integers.
-            target (int): The target value.
+            - nums (List[int]): The list of integers.
+            - target (int): The target value.
 
         Returns:
             List[int]: A list containing the indices of the two numbers that add up to the target value
         """
-
         # Dictionary to store the count of each element
         dic = Counter(nums)
 

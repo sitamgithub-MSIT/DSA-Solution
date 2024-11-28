@@ -8,15 +8,15 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(n)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
 
-```
+```python3 []
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         """
@@ -28,7 +28,6 @@ class Solution:
         Returns:
             int: The length of the longest consecutive sequence.
         """
-
         # Initialize a set to store the elements of the list
         num_set = set(nums)
         res = 0
