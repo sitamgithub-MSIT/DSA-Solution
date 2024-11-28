@@ -8,10 +8,10 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(m + n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(1)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
@@ -23,13 +23,12 @@ class Solution:
         Searches for a target value in a 2D matrix.
 
         Args:
-            matrix (List[List[int]]): The input 2D matrix.
-            target (int): The target value to search for.
+            - matrix (List[List[int]]): The input 2D matrix.
+            - target (int): The target value to search for.
 
         Returns:
             bool: True if the target value is found in the matrix, False otherwise.
         """
-
         # Row and column of the matrix
         row, col = len(matrix), len(matrix[0])
         l,  r = 0, col-1

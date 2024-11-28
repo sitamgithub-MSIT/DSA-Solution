@@ -8,10 +8,10 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(1)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
@@ -22,13 +22,12 @@ class Solution:
         """
         Finds the majority element in a given list of integers.
 
-        Parameters:
-        - nums (List[int]): The list of integers.
+        Args:
+            nums (List[int]): The list of integers.
 
         Returns:
-        - int: The majority element.
+            int: The majority element.
         """
-
         # Initialize count and ele to 0 and None
         count, ele = 0, None
 
