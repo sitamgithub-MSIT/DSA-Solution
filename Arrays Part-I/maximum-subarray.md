@@ -22,13 +22,12 @@ class Solution:
         """
         Finds the maximum sum of a subarray within the given list of integers.
 
-        Parameters:
-        - nums (List[int]): The list of integers.
+        Args:
+            nums (List[int]): The list of integers.
 
         Returns:
-        - int: The maximum sum of a subarray.
+            int: The maximum sum of a subarray.
         """
-
         # Initialize local_max and global_max to the first element of the list
         local_max = nums[0]
         global_max = nums[0]

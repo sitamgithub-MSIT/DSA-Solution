@@ -8,10 +8,10 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(1)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
@@ -22,13 +22,11 @@ class Solution:
         """
         Sorts an array of integers containing only 0s, 1s, and 2s in-place.
 
-        Parameters:
-        - nums (List[int]): The array of integers to be sorted.
+        Args:
+            nums (List[int]): The array of integers to be sorted.
 
-        Returns:
-        - None
+        Returns: None
         """
-
         # Initialize low, mid, and high pointers to 0, 0, and the length of the array minus 1
         low, mid, high = 0, 0, len(nums)-1
 

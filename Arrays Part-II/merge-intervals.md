@@ -28,7 +28,6 @@ class Solution:
         Returns:
             List[List[int]]: A list of merged intervals, where each interval is represented as a list oftwo integers [start, end].
         """
-
         # Sort the intervals based on the start time
         intervals.sort(key = lambda interval:interval[0])
         res = [intervals[0]]

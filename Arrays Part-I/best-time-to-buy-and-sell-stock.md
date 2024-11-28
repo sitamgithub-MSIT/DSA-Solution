@@ -28,7 +28,6 @@ class Solution:
         Returns:
             int: The maximum profit that can be obtained.
         """
-
         # Initialize l, max_profit to 0 and negative infinity
         l = 0
         max_profit = float('-inf')
