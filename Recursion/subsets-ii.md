@@ -18,54 +18,40 @@
 
 ```python3 []
 class Solution:
-    def partition(self, s: str) -> List[List[str]]:
+    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         """
-        This function partitions a given string `s` into all possible palindrome partitions.
+        Generates all possible subsets of a list of numbers, must not contain duplicates.
 
         Args:
-            s (str): The input string to be partitioned.
+            nums (List[int]): The list of integers which may contain duplicates.
 
         Returns:
-            List[List[str]]: A list of lists, where each inner list contains strings that are palindromic partitions of the input string.
+            List[List[int]]: A list of lists, where each inner list is a unique subset
+            of the input list.
         """
-        res=[]
-        sub=[]
+        # Sort the array to handle duplicates
+        nums.sort()
+        res, subset = [], []
 
-        # backtracking function
-        def backtrack(i):
-            # base case
-            if i >= len(s):
-                res.append(sub.copy())
+        def rec_backtrack(i):
+            # Base case
+            if(i == len(nums)):
+                res.append(subset.copy())
                 return
 
-            for j in range(i, len(s)):
-                # check if the substring is a palindrome
-                if self.palindrome(s, i, j):
-                    # add the substring to the current partition
-                    sub.append(s[i : j+1])
+            # Decision all subsets that includes nums[i]
+            subset.append(nums[i])
+            rec_backtrack(i+1)
 
-                    # recursively call the function for the next index
-                    backtrack(j+1)
+            # Decision all subsets that not includes nums[i]
+            subset.pop()
+            while(i+1 < len(nums) and nums[i] == nums[i+1]):
+                i += 1
+            rec_backtrack(i+1)
 
-                    # backtrack by removing the last element
-                    sub.pop()
+        # Call the recursive function
+        rec_backtrack(0)
 
-        # start the backtracking from index 0
-        backtrack(0)
-
-        # return the result
+        # Return the result
         return res
-
-    # check if the substring is a palindrome
-    def palindrome(self, s, l, r):
-        while(l <=r ):
-            # if the characters at the left and right pointers are not equal, return False
-            if s[l] != s[r]:
-                return False
-
-            # move the pointers towards the center
-            l, r = l+1, r-1
-
-        # return True if the substring is a palindrome
-        return True
 ```

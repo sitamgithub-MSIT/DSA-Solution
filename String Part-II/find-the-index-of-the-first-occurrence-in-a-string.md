@@ -8,7 +8,7 @@
 
 # Complexity
 
-- Time complexity: $$O(N * M)$$
+- Time complexity: $$O(n * m)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
 - Space complexity: $$O(1)$$
@@ -16,7 +16,7 @@
 
 # Code
 
-```python
+```python3 []
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         """
@@ -30,10 +30,10 @@ class Solution:
             int: The index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
         """
         # Iterating through the haystack string
-        for i in range(len(haystack)-len(needle)+1):
+        for i in range(len(haystack) - len(needle) + 1):
 
             # Checking if the current substring that we are observing in haystack is similar to needle or not
-            if haystack[i:i+len(needle)] == needle:
+            if haystack[i : i+len(needle)] == needle:
 
                 # If similar then return the starting index
                 return i

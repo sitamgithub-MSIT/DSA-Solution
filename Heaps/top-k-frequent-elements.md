@@ -23,14 +23,12 @@ class Solution:
         Returns the k most frequent elements in the given list of numbers.
 
         Args:
-            nums (List[int]): The list of numbers.
-            k (int): The number of most frequent elements to return.
+            - nums (List[int]): The list of numbers.
+            - k (int): The number of most frequent elements to return.
 
         Returns:
             List[int]: The k most frequent elements.
-
         """
-
         # Count the frequency of each number
         count = Counter(nums)
 
@@ -40,7 +38,7 @@ class Solution:
 
         # Add the frequency and number to the heap
         for n in set(nums):
-            heap.append(( -count[n], n))
+            heap.append((-count[n], n))
 
         heapq.heapify(heap)
 

@@ -8,15 +8,15 @@
 
 # Complexity
 
-- Time complexity:
+- Time complexity: $$O(n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(n)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
 
-```python
+```python3 []
 class Solution:
     def reverseWords(self, s: str) -> str:
         """

@@ -8,15 +8,15 @@
 
 # Complexity
 
-- Time complexity: $$O(N)$$
+- Time complexity: $$O(n)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity: $$O(N)$$
+- Space complexity: $$O(n)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code
 
-```python
+```python3 []
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         """

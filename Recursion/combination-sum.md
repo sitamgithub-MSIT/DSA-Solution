@@ -8,10 +8,10 @@
 
 # Complexity
 
-- Time complexity: $$O(n)$$
+- Time complexity: $$O(2^t)$$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity:
+- Space complexity: $$O(k*x)$$
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 # Code

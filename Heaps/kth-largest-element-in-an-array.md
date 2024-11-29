@@ -16,21 +16,19 @@
 
 # Code
 
-```
+```python3 []
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         """
         Finds the kth largest element in an array using a max heap.
 
         Args:
-            nums (List[int]): The input array of integers.
-            k (int): The position of the largest element to find.
+            - nums (List[int]): The input array of integers.
+            - k (int): The position of the largest element to find.
 
         Returns:
             int: The kth largest element in the array.
-
         """
-
         # Initializing our heap with numbers present in nums but converting each to negative to implement the max heap
         heap = [-n for n in nums]
 

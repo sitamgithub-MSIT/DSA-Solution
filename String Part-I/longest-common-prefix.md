@@ -16,7 +16,7 @@
 
 # Code
 
-```python
+```python3 []
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         """
