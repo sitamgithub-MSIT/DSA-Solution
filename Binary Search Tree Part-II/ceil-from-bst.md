@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -24,8 +24,17 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def findCeil(self,root, inp):
+    def findCeil(self, root, inp):
+        """
+        Finds the ceil value of a given input 'inp' in a binary search tree.
 
+        Args:
+            - root: The root node of the binary search tree.
+            - inp: The input value for which the ceil value needs to be found.
+
+        Returns:
+            The ceil value of 'inp' in the binary search tree.
+        """
         ceil = -1
 
         # Traverse the tree
@@ -46,5 +55,4 @@ class Solution:
 
         # Return the ceil
         return ceil
-
 ```

@@ -24,8 +24,17 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def findCeil(self,root, inp):
+    def floor(self, root, x):
+        """
+        Finds the floor value of a given input 'x' in a binary search tree.
 
+        Args:
+            - root: The root node of the binary search tree.
+            - x: The input value for which the floor value needs to be found.
+
+        Returns:
+            The floor value of 'x' in the binary search tree.
+        """
         floor = -1
 
         # Traverse the tree
@@ -46,5 +55,4 @@ class Solution:
 
         # Return the floor
         return floor
-
 ```
