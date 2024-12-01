@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -29,14 +29,12 @@ class Solution:
         Returns the kth smallest element in a binary search tree.
 
         Args:
-            root (Optional[TreeNode]): The root of the binary search tree.
-            k (int): The kth smallest element to find.
+            - root (Optional[TreeNode]): The root of the binary search tree.
+            - k (int): The kth smallest element to find.
 
         Returns:
             int: The kth smallest element in the binary search tree.
-
         """
-
         # If the root is None then return
         if root is None:
             return
