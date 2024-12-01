@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -29,14 +29,13 @@ class Solution:
         Determines whether a binary search tree is valid.
 
         Args:
-            root (Optional[TreeNode]): The root node of the binary search tree.
-            minimum (float): The minimum value that a node can have.
-            maximum (float): The maximum value that a node can have.
+            - root (Optional[TreeNode]): The root node of the binary search tree.
+            - minimum (float): The minimum value that a node can have.
+            - maximum (float): The maximum value that a node can have.
 
         Returns:
             bool: True if the binary search tree is valid, False otherwise.
         """
-
         # If the root is None then return True
         if root is None:
             return True
