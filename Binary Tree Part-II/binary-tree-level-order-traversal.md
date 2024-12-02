@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -25,7 +25,15 @@
 #         self.right = right
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        """
+        Returns the level order traversal of a binary tree.
 
+        Args:
+            root (Optional[TreeNode]): The root node of the binary tree.
+
+        Returns:
+            List[List[int]]: The level order traversal of the binary tree.
+        """
         # If root is None then return
         if root is None:
             return
@@ -60,6 +68,6 @@ class Solution:
             # Append the level array to the res array
             res.append(level)
 
+        # Return the res array
         return res
-
 ```

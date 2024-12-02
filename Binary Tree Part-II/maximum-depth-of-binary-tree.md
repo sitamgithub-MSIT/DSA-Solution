@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -34,7 +34,6 @@ class Solution:
         Returns:
             int: The maximum depth of the binary tree.
         """
-
         # If root is None then return 0 base case
         if root is None:
             return 0

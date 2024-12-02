@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -29,13 +29,12 @@ class Solution:
         Determines whether two binary trees are identical.
 
         Args:
-            p (Optional[TreeNode]): The root node of the first binary tree.
-            q (Optional[TreeNode]): The root node of the second binary tree.
+            - p (Optional[TreeNode]): The root node of the first binary tree.
+            - q (Optional[TreeNode]): The root node of the second binary tree.
 
         Returns:
             bool: True if the trees are identical, False otherwise.
         """
-
         # If both trees are empty then they are identical
         if not p and not q:
             return True

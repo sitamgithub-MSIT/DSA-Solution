@@ -29,7 +29,7 @@ class Solution:
         Converts a sorted array to a binary search tree.
 
         Args:
-            - nums (List[int]): A sorted array of integers.
+            nums (List[int]): A sorted array of integers.
 
         Returns:
             Optional[TreeNode]: The root node of the binary search tree.

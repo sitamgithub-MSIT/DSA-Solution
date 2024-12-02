@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -35,7 +35,6 @@ class Solution:
             int: The diameter of the binary tree.
 
         """
-
         # Variable to store the diameter of the binary tree
         diameter = float('-inf')
 
@@ -50,7 +49,6 @@ class Solution:
                 int: The height of the current node.
 
             """
-
             # Access the diameter variable
             nonlocal diameter
 

@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -34,19 +34,17 @@ class Solution:
         Returns:
             bool: True if the binary tree is symmetric, False otherwise.
         """
-
-        def symmetric(l,r):
+        def symmetric(l, r):
             """
             Helper function to check if two nodes are symmetric.
 
             Args:
-                l (TreeNode): The left node.
-                r (TreeNode): The right node.
+                - l (TreeNode): The left node.
+                - r (TreeNode): The right node.
 
             Returns:
                 bool: True if the nodes are symmetric, False otherwise.
             """
-
             # If both nodes are empty then they are symmetric
             if l is None and r is None:
                 return True
@@ -58,12 +56,12 @@ class Solution:
             else:
                 # If the values of the nodes are equal then check the left and right subtrees
                 if l.val == r.val:
-                    return symmetric(l.left,r.right) and symmetric(l.right,r.left)
+                    return symmetric(l.left, r.right) and symmetric(l.right, r.left)
 
                 # Else return False
                 else:
                     return False
 
         # Call the symmetric function
-        return symmetric(root.left,root.right)
+        return symmetric(root.left, root.right)
 ```

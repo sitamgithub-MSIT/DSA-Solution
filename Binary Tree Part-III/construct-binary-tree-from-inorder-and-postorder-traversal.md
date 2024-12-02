@@ -16,7 +16,7 @@
 
 # Code
 
-```
+```python3 []
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -29,13 +29,12 @@ class Solution:
         Constructs a binary tree from the given inorder and postorder traversal lists.
 
         Args:
-            inorder (List[int]): The inorder traversal list of the binary tree.
-            postorder (List[int]): The postorder traversal list of the binary tree.
+            - inorder (List[int]): The inorder traversal list of the binary tree.
+            - postorder (List[int]): The postorder traversal list of the binary tree.
 
         Returns:
             Optional[TreeNode]: The root node of the constructed binary tree.
         """
-
         # If either of the lists is empty then return None
         if not postorder or not inorder:
             return None
@@ -48,13 +47,12 @@ class Solution:
             Recursive helper function to construct the binary tree.
 
             Args:
-                l (int): The left index of the current subtree.
-                r (int): The right index of the current subtree.
+                - l (int): The left index of the current subtree.
+                - r (int): The right index of the current subtree.
 
             Returns:
                 TreeNode: The root node of the current subtree.
             """
-
             # If the left index is greater than the right index then return None
             if l > r:
                 return None

@@ -29,7 +29,7 @@ class Solution:
         Constructs a binary search tree from a preorder traversal.
 
         Args:
-            - preorder (List[int]): The preorder traversal of the binary search tree.
+            preorder (List[int]): The preorder traversal of the binary search tree.
 
         Returns:
             Optional[TreeNode]: The root node of the binary search tree.
@@ -38,6 +38,8 @@ class Solution:
 
         def build(preorder, bound):
             nonlocal i
+
+            # If the index is equal to the length of the preorder traversal or the current value is greater than the bound, return None
             if i == len(preorder) or preorder[i] > bound:
                 return None
 
